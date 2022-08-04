@@ -14,7 +14,7 @@ It manipulates a dataset of monkeypox cases registered around the world and does
 2. In what age range there were more confirmed cases of monkepox infection?
 3. Is there a relationship between country and age in the cases?
 
-You must have the following R packages to run this script: dplyr, readr, ggplot2, gridExtra
+You must have the following R packages to run this script: **dplyr, readr, ggplot2, gridExtra**
 You must also have the file Monkeypox.zip in the same directory as the script
 Upon downloading the script file and storing in a directory, make sure the file is in executable mode.
 The script is runnable on the command line and it requires the users interaction to continue running since it generates plots along the execution through a pop up R window. You can move the graph around the screen, and to continue the program, you simply need to press any key on the terminal when required.
