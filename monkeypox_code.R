@@ -27,7 +27,7 @@ library(gridExtra,warn.conflicts = FALSE)
 
 # Checking how many files there are and their names in the zipped folder
 message("\nChecking the zip file")
-unzip("/home/ondina/Documents/Career_Booster/Monkeypox.zip", list = TRUE)
+unzip("Monkeypox.zip", list = TRUE)
 
 # Load the target file
 mpx_df <- read.table(unz("Monkeypox.zip", "Monkeypox.csv"), 
