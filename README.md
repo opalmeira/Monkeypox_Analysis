@@ -1,5 +1,5 @@
 # Monkeypox_Analysis
-This script does some data tidying and analysis on a dataset of monkeypox cases in 2022
+This script does some data manipulation and analysis on a dataset of monkeypox cases in 2022
 
 # Instructions to run monkeypox_code.R
 
