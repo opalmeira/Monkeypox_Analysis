@@ -91,7 +91,7 @@ g2 <- g2 + ggtitle("Confirmed Monkeypox cases per Age range")
 
 g <- gridExtra::grid.arrange(g1, g2, nrow=1)
 
-message("\nRange 20-64 has the highest number of cases as shown on the graph, however, this range is very large so we will need some data tidying")
+message("\nRange 20-64 has the highest number of cases as shown on the graph, however, this range is very large so we will need some data manipulation")
 
 x11(width = 25, height = 10)
 plot(g)
