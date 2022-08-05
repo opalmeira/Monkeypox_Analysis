@@ -6,7 +6,7 @@ This script does some data tidying and analysis on a dataset of monkeypox cases 
 Input file: Monkeypox.zip/Monkepox.csv
 
 The Monkeypox dataset was downloaded from https://www.kaggle.com/datasets/hanzlanawaz/monkeypox-outbreak?resource=download
-Monkeypox is an infectious disease caused by orthopoxvirus. In May of 2022 there was an oubreak of the disease. According to the World Health Organization, this is the first time that many monkeypox cases and clusters have been reported concurrently in non-endemic and endemic countries in widely disparate geographical area (WHO). Thus, it is important to understand the course of the disease.
+Monkeypox is an infectious disease caused by orthopoxvirus. In May of 2022 there was an oubreak of the disease. According to the World Health Organization(WHO), this is the first time that many monkeypox cases and clusters have been reported concurrently in non-endemic and endemic countries in widely disparate geographical area (WHO). Thus, it is important to understand the course of the disease.
 
 The script was written in R version 3.6.3 (2020-02-29).
 It manipulates a dataset of monkeypox cases registered around the world and does some statistical analysis in order to answer the following questions:
