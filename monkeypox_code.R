@@ -1,4 +1,4 @@
-#! usr/bin/Rscript
+#!/usr/bin/Rscript
 
 #########################   Monkeypox Analaysis   #############################
 ### This script will attempt to answer the questions bellow through some    ###
