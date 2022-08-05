@@ -181,7 +181,8 @@ mpx_df2$age_l <- as.numeric(mpx_df2$age_l)
 mpx_df2$age_h <- as.numeric(mpx_df2$age_h)
 
 # Descriptive statistics of lower-bound age range per country
-message("\nDescriptive statistics of confirmed cases in lower-bound age range")
+message("\nFirst, we take an overview of the data distribution in relation to lower and upper-bound age range of length 5")
+message("Descriptive statistics of confirmed cases in lower-bound age range")
 group_by(mpx_df2, Country) %>%
   summarise(
     count = n(),
@@ -212,16 +213,19 @@ shapiro.test(mpx_df2$age_l)
 #upper-bound
 message("Upper-bound age range")
 shapiro.test(mpx_df2$age_h)
+message("The data is not normal distributed. Since p-value is lower than 0.05 
+we can reject the null hypothesis of the test")
 
 # Since we want to see the relationship between categorical variables and 
 # numeric variables, we choose to use of Non-parametric correlations. More specifically 
 # Kruskal-Wallis test because we have more than two indepenent groups(countries) and the data is not normally 
 # distributed
 #Lower-bound
+message("\nNow we test the hypothesis that age and country are related")
 message("\nTest if age is related to countries")
+
 message("\nLower-bound range")
 kruskal.test(age_l ~ Country, data = mpx_df2)
-
 
 message("\nUpper-bound range")
 #Upper-bound
@@ -229,5 +233,9 @@ kruskal.test(age_h ~ Country, data = mpx_df2)
  
 #Answer3: Neither limits of age range have correlation with the countries. However, more data points is necessary to reach a conclusion
 
-message("Neither limits of age range have correlation with the countries. However, more data points is necessary to reach a conclusion")
+message("\nP-values of the test for both lower and uppper-bound are higher than 0.05, 
+so we cannot reject the null hypothesis that age and country are not related")
+
+message("Neither limits of age range have correlation with the countries. 
+However, more data points is necessary to reach a conclusion")
 message("\nEnd of Analysis")
